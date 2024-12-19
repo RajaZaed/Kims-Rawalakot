@@ -1,0 +1,315 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: skyblue;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+.navbar .logo h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.hamburger .bar {
+    width: 3rem;
+    height: 0.4rem;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: skyblue;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+/* copy nav here to all section */
+
+/* General Styles for Diploma Section */
+#diploma {
+    background-color: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#diploma .section-title {
+    font-size: 2.5rem;
+    color: #007acc;
+    margin-bottom: 3rem;
+}
+
+.diploma-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.diploma-box {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.diploma-box:hover {
+    transform: translateY(-10px);
+}
+
+.diploma-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.diploma-title {
+    font-size: 1.8rem;
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+
+.diploma-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.apply-btn {
+    padding: 0.5rem 2rem;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #005f8c;
+}
+
+/* Criteria and Affiliation Sections */
+.criteria, .affiliation {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.criteria h3, .affiliation h3 {
+    font-size: 1.8rem;
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+
+.criteria p, .affiliation p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .diploma-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .diploma-box {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* General Styles for FSC Section */
+#fsc-programs {
+    background-color: #e0f7fa; /* Light cyan background for distinction */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#fsc-programs .section-title {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Slightly different shade of blue for distinction */
+    margin-bottom: 3rem;
+}
+
+.fsc-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.fsc-box {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #00bcd4; /* Adding border with the same color as the title */
+}
+
+.fsc-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.fsc-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.fsc-title {
+    font-size: 1.8rem;
+    color: #00796b; /* Dark green for headings */
+    margin-bottom: 1rem;
+}
+
+.fsc-description {
+    font-size: 1.1rem;
+    color: #607d8b; /* Greyish blue for description text */
+    margin-bottom: 1.5rem;
+}
+
+.apply-btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0097a7;
+}
+
+/* Criteria and Affiliation Section */
+.criteria, .affiliation {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.criteria h3, .affiliation h3 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+}
+
+.criteria p, .affiliation p {
+    font-size: 1.1rem;
+    color: #607d8b;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .fsc-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fsc-box {
+        max-width: 100%;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
