@@ -105,96 +105,74 @@ body {
 }
 /* copy nav here to all section */
 
-#map {
-    background-color: #f0f8ff; /* Light Sky Blue background */
-    padding: 4rem 2rem;
+.admission {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .admission h2, h3 {
     text-align: center;
-}
-
-.map-container {
-    max-width: 1200px;
-    margin: 0 auto; /* Ensure the content is centered */
-    padding: 0 15px; /* Add some padding to avoid content touching edges on small screens */
-}
-
-#map h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1e90ff; /* Sky Blue */
-    margin-bottom: 1rem;
-}
-
-#map p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2rem;
-}
-
-.map-campus {
-    margin-bottom: 3rem;
+  }
+  
+  .logo-small {
     display: block;
-    width: 100%; /* Ensure full width */
-}
-
-.map-campus h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-iframe {
-    width: 100%;
-    max-width: 100%; /* Ensures the iframe doesn't exceed the container's width */
-    height: 350px;
+    margin: 10px auto;
+    width: 50px;
+    height: auto;
+  }
+  
+  .admission form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Center the iframe */
-}
-
-/* Responsive Design for smaller screens */
-@media only screen and (max-width: 768px) {
-    #map h2 {
-        font-size: 1.5rem;
-    }
-
-    #map p {
-        font-size: 1rem;
-    }
-
-    .map-campus h3 {
-        font-size: 1.2rem;
-    }
-
-    iframe {
-        height: 250px; /* Reduce iframe height on smaller screens */
-    }
-}
-
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 1.5rem; /* Adjust spacing from the bottom */
-    right: 1.5rem; /* Adjust spacing from the right */
-    z-index: 1000;
-    background-color: #25D366; /* WhatsApp green */
-    border-radius: 50%;
-    width: 3.5rem; /* Size of the icon */
-    height: 3.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  .admission form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
   }
   
-  .whatsapp-icon {
-    width: 60%;
-    height: 60%;
+  .admission form input,
+  .admission form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .education-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .education-box {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  #admission-form button {
+    background: skyblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #admission-form button:hover {
+    background: #005f74;
+  }
+  
+  .instructions {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
   }
   
