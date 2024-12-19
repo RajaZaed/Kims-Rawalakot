@@ -289,3 +289,273 @@ section p {
         margin: 10px 2%;
     }
 }
+
+
+/* Owner Section */
+.owner {
+    text-align: center; /* Center content */
+    margin-top: 5vw; /* Margin for top space (responsive) */
+}
+
+.owner-image {
+    width: 55vw; /* Set the width of the image container based on viewport width */
+    height: 40vh; /* Set the height of the image container based on viewport height */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide any overflow */
+    background-color: white; /* White background for the image */
+    margin: 0 auto; /* Center the image container */
+}
+
+.owner-image img {
+    width: 100%; /* Ensure the image covers the entire container */
+    height: 100%; /* Ensure the image covers the entire container */
+    object-fit: contain; /* Ensures the image covers the container without distortion */
+}
+
+.owner h2 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    color: grey; /* Grey color for the text */
+    margin-top: 2vw; /* Space above the text */
+}
+
+/* General Styles */
+h2, h3 {
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #0066cc;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  section {
+    margin: 5vh 0;
+    padding: 3vh;
+    background-color: white;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 3vh 0;
+  }
+  
+  footer .social-links {
+    margin-top: 2vh;
+  }
+  
+  footer .social-links a {
+    margin: 0 2vw;
+    color: white;
+  }
+  
+  footer .social-links a:hover {
+    color: #0066cc;
+  }
+  
+  /* Call to Action Section */
+  #cta {
+    text-align: center;
+    background-color: #0066cc;
+    color: white;
+    padding: 10vh 5vw;
+  }
+  
+ 
+  
+  #cta .cta-button {
+    padding: 2vh 4vw;
+    background-color: white;
+    color: #0066cc;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  #cta .cta-button:hover {
+    background-color: #004d99;
+    color: white;
+  }
+  
+  /* Quick Links Section */
+  #quick-links {
+    text-align: center;
+  }
+  
+  #quick-links h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #quick-links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+  }
+  
+  #quick-links ul li {
+    font-size: 1.8rem;
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 5vh 3vw;
+  }
+  
+  #testimonials h3 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+  
+  #testimonials p {
+    font-size: 1.8rem;
+    color: #666;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  
+  /* Newsletter Signup */
+  #newsletter {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 7vh 3vw;
+  }
+  
+  #newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  #newsletter input[type="email"] {
+    padding: 1.5vh;
+    font-size: 1.6rem;
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #newsletter button {
+    padding: 1.5vh 3vw;
+    background-color: #0066cc;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #newsletter button:hover {
+    background-color: #004d99;
+  }
+  
+  /* Back to Top Button */
+  #back-to-top {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    background-color: #0066cc;
+    color: white;
+    padding: 2vh 2vw;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2.4rem;
+    display: none;
+  }
+  
+  #back-to-top:hover {
+    background-color: #004d99;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    #newsletter input[type="email"] {
+      width: 70%;
+    }
+  
+    #quick-links ul {
+      flex-direction: column;
+    }
+  
+    #quick-links ul li {
+      font-size: 1.6rem;
+    }
+  
+    #cta .cta-button {
+      font-size: 1.6rem;
+    }
+  
+    #back-to-top {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #newsletter input[type="email"] {
+      width: 90%;
+    }
+  
+    #quick-links ul li {
+      font-size: 1.4rem;
+    }
+  
+    #cta .cta-button {
+      font-size: 1.4rem;
+    }
+  }
+
+  
+  /* Back to Top Button */
+
+  #backToTopBtn{
+    background-color: white;
+    
+    padding: 1rem;
+    color: #004d99;
+    
+    border: none;
+    border-top-left-radius: 0;
+    border: 1px solid skyblue;
+  }
+
+  /* Logo container styling */
+.logo-container {
+    text-align: center; /* Centers the logo */
+    margin-top: 20px;    /* Space from the top */
+  }
+  
+  .logo {
+    max-width: 100%;     /* Make sure the logo does not exceed the container width */
+    height: auto;        /* Maintain aspect ratio */
+    width: 20vw;         /* Adjust the width as needed (viewport width percentage for responsiveness) */
+  }
+  
+  /* Optional: Add logo responsiveness for smaller screens */
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 30vw;      /* Make the logo a little larger on smaller screens */
+    }
+  }
+  
