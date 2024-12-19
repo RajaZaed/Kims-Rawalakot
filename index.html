@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMS College Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+     
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <h3>KIMS </h3>
+    </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#diploma">Diploma</a></li>
+            <li><a href="#bsprogram">BS Program</a></li>
+            <li><a href="#campus">Campus</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
+    <!-- Content Section -->
+    <section style="padding: 2rem; text-align: center;">
+        <h1> Kashmir Institute Of Medical Sciences </h1>
+        <p>"Empowering minds, shaping futures, and unlocking potential."</p>
+    </section>
+
+<!-- Below the Quote -->
+<div class="college-image-container">
+    <img src="assets/images/building.jpg" alt="KIMS College Building" class="college-image">
+</div>
+
+<!-- Call-to-Action Section -->
+<section class="cta">
+    <h2>Take the Next Step in Your Education</h2>
+    <p>Join KIMS to shape your future with quality education and excellent facilities.</p>
+    <a href="pages/admission.html" class="cta-button">Apply Now</a>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="feature-item">
+        <h3>Quality Education</h3>
+        <p>We provide top-notch education with experienced faculty.</p>
+    </div>
+    <div class="feature-item">
+        <h3>State-of-the-art Facilities</h3>
+        <p>Our campus is equipped with the latest infrastructure and technology.</p>
+    </div>
+    <div class="feature-item">
+        <h3>Experienced Faculty</h3>
+        <p>Our experienced faculty is dedicated to your success and growth.</p>
+    </div>
+</section>
+
+<!-- Student Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-item">
+        <p>"KIMS College provided me with the knowledge and skills to succeed in my career. The faculty is amazing!"</p>
+        <h4>- Muhammad Uzair, MLT FSC</h4>
+    </div>
+    <div class="testimonial-item">
+        <p>"The campus is beautiful, and the learning environment is very conducive to growth."</p>
+        <h4>- Zunaira Wasid, Bs Emergency & Medical Sciences</h4>
+    </div>
+</section>
+
+<!-- Upcoming Events Section -->
+<!-- Departments Section -->
+<section class="departments">
+    <h2>Our Academic Departments</h2>
+    <div class="department-item">
+        <h3>BS Clinical Sciences</h3>
+        <p>Explore advanced clinical techniques and healthcare practices.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>BS Emergency and Medicine Technology</h3>
+        <p>Specialized training in emergency medicine and life-saving techniques.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>FSC and Diploma in Medical Lab Technology</h3>
+        <p>Gain expertise in laboratory science and diagnostic technology.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>FSC and Diploma in Operation Theater</h3>
+        <p>Learn the skills needed for work in operation theaters and surgical settings.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>FSC and Diploma in Dialysis</h3>
+        <p>Specialize in dialysis procedures and renal care technologies.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>FSC and Diploma in Dispenser</h3>
+        <p>Learn the basics of pharmaceutical dispensing and medication management.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>FSC and Diploma in Dental Technology</h3>
+        <p>Master the art of dental technology, from prosthetics to orthodontics.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="department-item">
+        <h3>FSC and Diploma in Radiology</h3>
+        <p>Explore radiological techniques and diagnostic imaging.</p>
+        <a href="#">Learn More</a>
+    </div>
+</section>
+
+</section>
+
+
+
+    
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const navbarMenu = document.querySelector('.navbar ul');
+            navbarMenu.classList.toggle('show');
+        }
+
+        // JavaScript to toggle the menu on and off
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>
