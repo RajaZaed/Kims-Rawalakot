@@ -1,0 +1,229 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: skyblue;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+.navbar .logo h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.hamburger .bar {
+    width: 3rem;
+    height: 0.4rem;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: skyblue;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+/* copy nav here to all section */
+
+/* Resetting margin and padding */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Event Container */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Spacing between events */
+    padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Event Card */
+.event-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); /* Blur shadow */
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Event Card Title */
+.event-card h3 {
+    font-size: 2rem;
+    color: #003366; /* Dark blue color for titles */
+    margin-bottom: 1rem;
+}
+
+/* Event Card Description */
+.event-card p {
+    font-size: 1.2rem;
+    color: #555555; /* Light grey text */
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Event Images */
+.event-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Event Image Hover Effect */
+.event-images img:hover {
+    transform: scale(1.05); /* Zoom effect */
+}
+
+/* Title for Events Section */
+.events-title {
+    text-align: center;
+    font-size: 3rem;
+    color: skyblue;
+    margin-bottom: 3rem;
+}
+
+/* Media Queries for Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .events-title {
+        font-size: 2.5rem;
+    }
+
+    .event-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .event-card p {
+        font-size: 1rem;
+    }
+
+    .event-container {
+        padding: 1rem;
+    }
+
+    .event-images img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-container {
+        grid-template-columns: 1fr; /* One column on mobile */
+        gap: 1rem;
+    }
+
+    .event-card {
+        padding: 1.5rem;
+    }
+
+    .event-title {
+        font-size: 2rem;
+    }
+
+    .event-card p {
+        font-size: 0.9rem;
+    }
+}
