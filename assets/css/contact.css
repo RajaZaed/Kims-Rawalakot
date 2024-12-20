@@ -1,3 +1,23 @@
+/* Navbar Styles */
+.logo {
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Add some spacing between the image and the text */
+  }
+  
+  .logo img {
+    max-width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    
+  }
+  
+  .logo h3 {
+    font-size: 1.2rem; /* Adjust text size for responsiveness */
+    margin: 0;
+  }
+  
+
 /* General Navbar Styling */
 .navbar {
     display: flex;
@@ -213,15 +233,15 @@ body {
 }
 
 .facebook {
-    background-color: #3b5998;
+    background-color: #0c55f3;
 }
 
 .twitter {
-    background-color: #1da1f2;
+    background-color: #1df22b;
 }
 
 .instagram {
-    background-color: #e1306c;
+    background-color: #e13030;
 }
 
 .linkedin {

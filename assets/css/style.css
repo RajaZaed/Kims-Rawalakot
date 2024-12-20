@@ -4,6 +4,25 @@
 
 
 /* Navbar Styles */
+.logo {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Add some spacing between the image and the text */
+}
+
+.logo img {
+  max-width: 50px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  
+}
+
+.logo h3 {
+  font-size: 1.2rem; /* Adjust text size for responsiveness */
+  margin: 0;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
