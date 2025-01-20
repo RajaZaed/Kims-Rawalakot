@@ -11,6 +11,7 @@
 }
 
 .logo img {
+  
   max-width: 50px; /* Adjust the size as needed */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
