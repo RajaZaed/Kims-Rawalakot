@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo.jpg">
     <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +63,7 @@
             <li><a href="diploma.html">Diploma</a></li>
             <li><a href="bs-program.html">BS Program</a></li>
             <li><a href="campus.html">Campus</a></li>
-            <li><a href="map.html">Map</a></li>
+            <li><a href="map.html">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
@@ -178,6 +181,55 @@
         <h4>- Zunaira Wasid, Bs Emergency & Medical Sciences</h4>
     </div>
 </section>
+
+<!-- slider -->
+<div class="hero-slider">
+  <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('assets/images/classs.JPG');">
+              <div class="slide-content">
+                  <h2>Welcome to KIMS</h2>
+                  <p>Explore Our Classrooms</p>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('assets/images/kojii.JPG');">
+              <div class="slide-content">
+                  <h2>Student Life at KIMS</h2>
+                  <p>Empowering Future Professionals</p>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('assets/images/labu.JPG');">
+              <div class="slide-content">
+                  <h2>Advanced Laboratories</h2>
+                  <p>State-of-the-art Lab Equipment</p>
+              </div>
+          </div>
+      </div>
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+</script>
+<!-- slider -->
 
 <!-- Upcoming Events Section -->
 <!-- Departments Section -->
