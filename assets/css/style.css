@@ -608,3 +608,108 @@ h2, h3 {
     height: 60%;
   }
   
+
+  /* move */
+/* page tewo */
+.page2{
+  min-height: 20vh;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  padding: 6vw 0;
+  position: relative;
+}
+
+
+
+
+.moving-text h1{
+  font-size: 9vw;
+  display: inline-block;
+
+}
+
+.gola{
+  text-align: center;
+  height: 5vh;
+  width:2.5vw ;
+  
+  background-color: #020266;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+
+.con{
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+}
+
+.moving-text{
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar{
+  display: none;
+}
+.moving-text::-webkit-scrollbar{
+  display: none;
+}
+@keyframes move{
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+
+.moving-text {
+  white-space: nowrap;
+  overflow: hidden; /* Hides the scrollbar */
+}
+
+.moving-text::-webkit-scrollbar {
+  display: none; /* For Webkit-based browsers (Chrome, Safari) */
+}
+
+.moving-text {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .moving-text h1 {
+      font-size: 12vw; /* Adjust text size for tablets */
+  }
+
+  .gola {
+      height: 4vh; /* Reduce size for smaller screens */
+      width: 5vw;
+  }
+
+  .page2 {
+      padding: 6vw 0; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .moving-text h1 {
+      font-size: 14vw; /* Adjust text size for mobile screens */
+  }
+
+  .gola {
+      height: 3.5vh; /* Smaller size for mobile */
+      width: 6vw;
+  }
+
+  .page2 {
+      padding: 4vw 0; /* Smaller padding for mobile */
+  }
+}
