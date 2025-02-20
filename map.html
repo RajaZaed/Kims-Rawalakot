@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo.jpg">
     <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,6 +78,51 @@
     </div>
 </nav>
 <!-- new gallery -->
+
+    
+
+<!-- Navbar -->
+
+
+<!-- Gallery Section -->
+<section class="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-container">
+        <a href="assets/images/gallery/image1.jpg" class="gallery-item">
+            <img src="assets/images/kojii.JPG" alt="Campus View">
+        </a>
+        <a href="assets/images/gallery/image2.jpg" class="gallery-item">
+            <img src="assets/images/kojii.JPG" alt="Lab Equipment">
+        </a>
+        <a href="assets/images/gallery/image3.jpg" class="gallery-item">
+            <img src="assets/images/kojii.JPG" alt="Classroom">
+        </a>
+        <a href="assets/images/gallery/image4.jpg" class="gallery-item">
+            <img src="assets/images/kojii.JPG" alt="Event Celebration">
+        </a>
+        <a href="assets/images/gallery/image5.jpg" class="gallery-item">
+            <img src="assets/images/kojii.JPG" alt="Students Practicing">
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2024 KIMS College. All rights reserved.</p>
+</footer>
+
+<!-- Lightbox Script -->
+<script>
+    $(document).ready(function() {
+        $('.gallery-container').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: { enabled: true }
+        });
+    });
+</script>
+
+
 
 
 
