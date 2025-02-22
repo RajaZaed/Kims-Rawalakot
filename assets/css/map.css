@@ -1,4 +1,7 @@
 /* Navbar Styles */
+html{
+  font-family: 'Times New Roman', Times, serif;
+}
 .logo {
     display: flex; /* Use Flexbox */
     align-items: center; /* Vertically center the items */
@@ -245,90 +248,4 @@ body {
     font-weight: bold;
 }
 
-.gallery {
-    text-align: center;
-    padding: 20px;
-}
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.gallery-item img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
-.footer {
-    text-align: center;
-    /* background: #005f73; */
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-
 /* gallery */
-.gallery {
-  padding: 20px;
-}
-.filter-buttons {
-  margin-bottom: 20px;
-}
-.filter-btn {
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  cursor: pointer;
-  background: #007bff;
-  color: white;
-  border-radius: 5px;
-}
-.filter-btn.active {
-  background: #0056b3;
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  padding: 10px;
-}
-.gallery-item {
-  width: 100%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-}
-.lightbox-content {
-  max-width: 90%;
-  max-height: 90%;
-}
-.close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-}
