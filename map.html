@@ -55,26 +55,24 @@
  <!-- Navbar -->
  <nav class="navbar">
     <div class="logo">
-      
-        <img src="assets/images/pogo.jpg" alt="">  <h3>The KIMs </h3>
-      </div>
+        <img src="assets/images/pogo.jpg" alt="">  <h3>The KIMs</h3>
+    </div>
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     <div class="menu" id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="event.html" >Events</a></li>
-            <li><a href="diploma.html" >Diploma</a></li>
-            <li><a href="bs-program.html" >BS Program</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="diploma.html">Diploma</a></li>
+            <li><a href="bs-program.html">BS Program</a></li>
             <li><a href="campus.html">Campus</a></li>
             <li><a href="map.html" class="active">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-    </div>
-    <!-- Hamburger icon -->
-    <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
     </div>
 </nav>
 <!-- new gallery -->
@@ -155,11 +153,11 @@
               <!-- <div class="slide"><img src="assets/images/a (2).JPG" alt="MLT Lab 1"></div> -->
               <div class="slide"><img src="assets/images/1 (5).JPG" alt="MLT Lab 1"></div>
               <div class="slide"><img src="assets/images/1 (8).JPG" alt="MLT Lab 1"></div>
-              <div class="slide"><img src="assets/images/1 (4).JPG" alt="MLT Lab 1"></div>
+              <!-- <div class="slide"><img src="assets/images/1 (4).JPG" alt="MLT Lab 1"></div> -->
               <div class="slide"><img src="assets/images/a.JPG" alt="MLT Lab 1"></div>
               <div class="slide"><img src="assets/images/1 (6).JPG" alt="MLT Lab 1"></div>
-              <div class="slide"><img src="assets/images/1 (9).JPG" alt="MLT Lab 1"></div>
-              <div class="slide"><img src="assets/images/1 (10).JPG" alt="MLT Lab 1"></div>
+              <!-- <div class="slide"><img src="assets/images/1 (9).JPG" alt="MLT Lab 1"></div> -->
+              <!-- <div class="slide"><img src="assets/images/1 (10).JPG" alt="MLT Lab 1"></div> -->
               <div class="slide"><img src="assets/images/1 (7).JPG" alt="MLT Lab 1"></div>
               <div class="slide"><img src="assets/images/1 (11).JPG" alt="MLT Lab 1"></div>
               <div class="slide"><img src="assets/images/1 (12).JPG" alt="MLT Lab 1"></div>
@@ -241,22 +239,42 @@
       </div>
   </div>
 
-  <div class="category">
-      <h2>Radiology</h2>
-      <div class="slider-container">
-          <div class="slider" id="librarySlider">
-            <div class="slide"><img src="assets/images/thea (4).JPG" alt="Library 1" loading="lazy"></div>
+ 
               
               
               
               
               
-          </div>
+        
           <button class="prev" onclick="prevSlide('librarySlider')">&#10094;</button>
           <button class="next" onclick="nextSlide('librarySlider')">&#10095;</button>
       </div>
   </div>
 </section>
+
+<div class="lab-heading">
+    <h2>Inside Our Lab</h2>
+</div>
+
+<div class="lab-photos">
+   
+    <img src="assets/images/1 (11).JPG" alt="KIMS Lab 1">
+    
+    
+    
+    <img src="assets/images/labs picture (3).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (4).JPG" alt="KIMS Lab 3">
+   
+    <img src="assets/images/labs picture (5).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (2).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (9).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (8).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (7).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (6).JPG" alt="KIMS Lab 3">
+    <img src="assets/images/labs picture (1).JPG" alt="KIMS Lab 3">
+    
+</div>
+
 
 <script>
   function showSlide(sliderId, index) {
@@ -356,5 +374,28 @@
     </div>
   </footer>
     <!-- new footer -->
+    <script>
+        document.getElementById("hamburger").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("active");
+        });
+    </script>
+
+<script>
+    // Hamburger Menu Toggle
+    document.getElementById("hamburger").addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("active");
+    });
+
+    // Image Slider Functionality
+    function nextSlide(sliderId) {
+        let slider = document.getElementById(sliderId);
+        slider.appendChild(slider.firstElementChild);
+    }
+    function prevSlide(sliderId) {
+        let slider = document.getElementById(sliderId);
+        slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
+    }
+</script>
+
 </body>
 </html>

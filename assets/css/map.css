@@ -249,3 +249,51 @@ body {
 }
 
 /* gallery */
+
+.lab-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.lab-photos img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.lab-photos img:hover {
+  transform: scale(1.05);
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: white;
+      width: 100%;
+      padding: 10px;
+  }
+  .menu.active {
+      display: flex;
+  }
+  .hamburger {
+      display: block;
+  }
+}
