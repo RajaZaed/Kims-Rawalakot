@@ -1,4 +1,11 @@
 /* Navbar Styles */
+body {
+  font-family: "Times New Roman", ;
+}
+body {
+  font-family: 'EB Garamond', serif;
+}
+
 .logo {
     display: flex; /* Use Flexbox */
     align-items: center; /* Vertically center the items */
@@ -379,3 +386,38 @@ body {
       margin-top: 10px;
     }
   }
+
+  .hamburger {
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+@media (max-width: 768px) {
+  .navbar .menu {
+      display: none; /* Hide the menu by default */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #0088cc;
+      text-align: center;
+      line-height: 3.5rem;
+  }
+
+  .navbar .menu ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .navbar .menu ul li {
+      margin-bottom: 10px;
+  }
+
+  .navbar .hamburger {
+      display: flex; /* Show hamburger icon */
+  }
+
+  .navbar .menu.active {
+      display: block; /* Show menu when active */
+  }
+}
